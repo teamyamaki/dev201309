@@ -8,7 +8,6 @@ Capybara.run_server = false
 Capybara.app_host = 'http://localhost:3000'
 
 node = ChildProcess.build("node", "app")
-node.cwd = 'hello_nodejs'
 node.environment['PORT'] = 3000
 node.start
 

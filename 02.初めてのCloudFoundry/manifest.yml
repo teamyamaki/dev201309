@@ -1,0 +1,4 @@
+---
+applications:
+- name: hello_cf
+  command: node app.js
