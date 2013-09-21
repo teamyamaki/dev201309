@@ -5,10 +5,18 @@
   シナリオ: CloudFoundryにデプロイ
     * https://console.run.pivotal.io/register からアカウント作成
     * Rubyをインストール
+      """
+      http://rubyinstaller.org/downloads/ からインストーラをダウンロード
+      rubyをPATHに含めておく
+      バージョンを確認できればOK
+      <b>
+      $ ruby -v
+      </b>
+      """
     * CloundFoundry用のツールをインストール
       """
       <b>
-      $ sudo gem install cf
+      $ gem install cf
       </b>
       """
     * デプロイ構成を管理する manifest.yml を作成

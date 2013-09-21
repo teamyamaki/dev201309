@@ -5,7 +5,9 @@
   capture
 end
 
-もし /^Rubyをインストール$/ do
+もし /^Rubyをインストール$/ do |string|
+  visit 'http://rubyinstaller.org/downloads/'
+  capture
 end
 
 もし /^CloundFoundry用のツールをインストール$/ do |string|
